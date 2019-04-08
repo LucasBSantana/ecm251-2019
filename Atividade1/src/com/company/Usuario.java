@@ -23,12 +23,12 @@ public class Usuario {
         this.email = novoEmail;
     }
 
-    public void pagamento(int senha){
+    public void pagamento(int senha){// tranfere o metodo pagamento para o usuario e nao para a carteira sem comprometer os dados
         System.out.println("O usuario "+nome);
         carteira.pagamento(senha);
     }
 
-    public void getUsuario(){
+    public void getUsuario(){// printa as informacoes do usuario, do cartao e da carteira
         System.out.println("Usuario:\n\t"+nome+"\n\t"+email+"\nCarteira:\n"+carteira.getCarteira()+"\n");
     }
 }

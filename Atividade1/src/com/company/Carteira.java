@@ -16,7 +16,7 @@ public class Carteira {
         else
             this.cartaoDebito = cartao1;
 
-        if (cartao2 == null) {
+        if (cartao2 == null) {// avalia se existem os dois cartoese caso nao exista 1 avalia qual dos dois tipos o cartao existente é e coloca o valor null para o outro
             if (cartao1.getTipo().equals("credito"))
                 this.cartaoDebito = cartao2;
             else
@@ -30,14 +30,14 @@ public class Carteira {
         }
     }
 
-    public void pagamento(int senhaInput){
+    public void pagamento(int senhaInput){//efetua a conferencia entre a senha da conta e a senha inputada para enfim efetuar o pagamento
         if (senhaInput == senhaAcesso)
             System.out.println("\tefetuou o pagamento\n");
         else
             System.out.println("\terrou a senha\n");
     }
 
-    public void setCartao(Cartao cartao){
+    public void setCartao(Cartao cartao){// caso o usuario mude seu cartao troca um cartao por outro ou adiciona no espaco vazio
         if (cartao.getTipo().equals("credito"))
             this.cartaoCredito = cartao;
         else
@@ -52,7 +52,7 @@ public class Carteira {
         return this.idCarteira;
     }
 
-    public String getCarteira(){
+    public String getCarteira(){// retorna as informacoes da carteira
 
         if (cartaoDebito == null)
             return "\tId da carteira:\t"+idCarteira+"\n\tNome da carteira:\t"+nomeCarteira+"\n\tCartao de credito:\n"+cartaoCredito.getCartao()+"\n\tCartao de debito:\n\t\tNão existe";
