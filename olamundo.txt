@@ -1,5 +1,0 @@
-para utilizar o VI vender a alma e depois apertar I para editar o arquivo
-
-para abrir o VI: vi nomearquivo
-
-para sair :wq
