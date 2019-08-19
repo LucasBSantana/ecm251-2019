@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="Esse é o pior jeito de criar interfaces">
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="RED" offset="0.007662835249042145" />
+                  <Stop color="#ffd200" offset="0.13812853023659988" />
+                  <Stop color="#beff00" offset="0.257336967255204" />
+                  <Stop color="#00ff50" offset="0.3879211596950665" />
+                  <Stop color="#00ffc5" offset="0.5006517359876761" />
+                  <Stop color="#00b1ff" offset="0.6182802069755501" />
+                  <Stop color="#0035ff" offset="0.7492593909230951" />
+                  <Stop color="#cb00ff" offset="0.8826085239167356" />
+                  <Stop color="#eb00ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Britannic Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTexto" alignment="CENTER" contentDisplay="CENTER" text="Label V2" GridPane.rowIndex="2">
+         <font>
+            <Font name="ISOCP3_IV50" size="25.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#changeText" text="Button" GridPane.rowIndex="3" />
+      <TextField fx:id="txtNome" promptText="Insira su nombre" GridPane.rowIndex="1" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</GridPane>

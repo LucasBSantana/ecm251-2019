@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="Inputar numeros:" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <font>
+            <Font name="SWRomnt" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtValue1" promptText="Primeiro numero" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <TextField fx:id="txtValue2" promptText="Segundo numero" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Button maxWidth="40.0" minHeight="0.0" minWidth="40.0" mnemonicParsing="false" onAction="#sum" text="+" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <Button maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#subt" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+      <Button maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#mult" text="*" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <Button maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#div" text="/" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <Label text="Operações:" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <font>
+            <Font name="SWRomnt" size="12.0" />
+         </font></Label>
+      <Label text="Resultado:" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <font>
+            <Font name="SWRomnt" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblRes" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+   </children>
+</GridPane>
